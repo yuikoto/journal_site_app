@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
-    <a href="/article">戻る</a>
-    <h1>新規登録</h1>
+    <h1>新規論文投稿</h1>
     <form action="/articles" method="post">
         @csrf
         <p>
-            <label for="title">タイトル</label><br>
+            <label for="title">論文タイトル</label><br>
             <input type="text" name="title">
         </p>
         <p>
@@ -21,7 +20,7 @@
             <textarea name="body" class="body"></textarea>
         </p>
 
-        <input type="submit" value="登録">
+        <input type="submit" value="投稿">
     </form>
 </body>
 </html>
